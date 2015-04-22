@@ -5,18 +5,57 @@ date: "April 17, 2015"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+For "Tableau Project 3", we use the data for "Community Health Status Indicators (CHSI) to Combat Obesity, Heart Disease and Cancer". This dataset has multiple csv files that give key health indicators that are measured for several counties across all the states in the United States. Columns included in the dataset are deaths from different causes, demographics of the area, cases of diseases, health information, insurance and health practitioner data. 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+First, open Oracle SQL Developer and import the data for DEMOGRAPHICS, LEADINGCAUSESOFDEATH (renamed LEADING_CAUSES) and RISKFACTORSANDACCESSTOCARE (renamed RISK_FACTORS). Or skip this step and connect to the cs329e server with the respective UTEid's. 
 
-```{r}
-summary(cars)
-```
+![](./importdata.png)
 
-You can also embed plots, for example:
+Next, open Tableau and select "Connect to Data". Select Oracle from the list of servers and connect using:
 
-```{r, echo=FALSE}
-plot(cars)
-```
+Server: 129.152.144.84
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Service: ORCL.usuniversi01134.oraclecloud.internal
+
+Port: 1521
+
+Username: C##cs329e_UTEid
+
+Password: orcl_UTEid
+
+![](./Tableau.png)
+
+
+The purpose of this project is to "blend" two datasets together on Tableau, similar to joining but still having separate datasets rather than a single joined table. The data will have to be connected separated (i.e. you will have to connect to data twice and choose each separately). When both datasets are seen under the data column on the left, 
+
+![](./datasets.png)
+
+then select Data at the top menu and "Edit Relationships". Here, you can choose which is the primary and secondary data source. To customize the linked relationships, select Custom and the **Add** to choose the primary and secondary source field. Source fields can only be dimension variables and not measures. 
+
+![](./relationships.png)
+
+Connected data will show check marks and the secondary data will have linking chains next to the deminension names. 
+
+####Blending LEADING_CAUSES and RISK_FACTORS
+
+The following two visualizations blend LEADING_CAUSES and RISK_FACTORS. 
+
+**1. Relationship between Cancer and Smoking**
+
+Smoking, from RISK_FACTORS, is a risk indicator of later health complications such as the predicted lung cancer. Cancer is not divided by type but we assume that it is an indicator regardless. A calculated field of total cancer deaths is created and this is set on one axis compared to smoking individuals. We see a slight correlation between the two as expected. 
+
+**2. Heart disease vs Obesity**
+
+Now obesity is the risk factor compared to the cause of death from heart disease. Similar to the previous visualization we will use a graph to see the correlation, if there is any, between the stereotypically associated variables. Number of obese individauls are plotted with the population portion that have died as a result of heart disease. Again a calculted field was created to sum all the deaths that related to heart disease. 
+
+
+####Blending DEMOGRAPHICS and LEADING_CAUSES
+
+For the last two visualizations, DEMOGRAPHICS data was blended with LEADING_CAUSES instead. 
+
+**3. Distribution of Causes of Death according to Race**
+
+Causes of death are already grouped by ages and separated individually by race, so that each cause has a value for white, other, black and hispanic in certain age groups. Four calculated fields for each race with all the respective age groups was made. By visualizing this data, we can see higher leading causes of death for each race and if there is a correlation due to either genetics or other confounding factors. 
+
+**4. Age and Causes of Death**
+For our final visualization, it will be similar to the previous in using the causes of death but instead separating by calculated fields of age groups. Based on the bar graph we see that certain age groups are more at risk for certain causes of death relative to others. 
