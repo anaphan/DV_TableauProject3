@@ -25,7 +25,6 @@ Password: orcl_UTEid
 
 ![](./Tableau.png)
 
-
 The purpose of this project is to "blend" two datasets together on Tableau, similar to joining but still having separate datasets rather than a single joined table. The data will have to be connected separated (i.e. you will have to connect to data twice and choose each separately). When both datasets are seen under the data column on the left, 
 
 ![](./datasets.png)
@@ -34,7 +33,7 @@ then select Data at the top menu and "Edit Relationships". Here, you can choose 
 
 ![](./relationships.png)
 
-Connected data will show check marks and the secondary data will have linking chains next to the deminension names. 
+Connected data will show check marks and the secondary data will have linking chains next to the dimension names. 
 
 ####Blending LEADING_CAUSES and RISK_FACTORS
 
@@ -42,12 +41,17 @@ The following two visualizations blend LEADING_CAUSES and RISK_FACTORS.
 
 **1. Relationship between Cancer and Smoking**
 
-Smoking, from RISK_FACTORS, is a risk indicator of later health complications such as the predicted lung cancer. Cancer is not divided by type but we assume that it is an indicator regardless. A calculated field of total cancer deaths is created and this is set on one axis compared to smoking individuals. We see a slight correlation between the two as expected. 
+Smoking, from RISK_FACTORS, is a risk indicator of later health complications such as the predicted lung cancer. Cancer is not divided by target, such as lung, breast, etc. but we assume that it is an indicator regardless. A calculated field of total cancer deaths is created and this is set on one axis compared to smoking individuals. We see a slight correlation between the two as expected as seen by the scatterplot and the trendline. 
+
+![](./blending1.png)
 
 **2. Heart disease vs Obesity**
 
-Now obesity is the risk factor compared to the cause of death from heart disease. Similar to the previous visualization we will use a graph to see the correlation, if there is any, between the stereotypically associated variables. Number of obese individauls are plotted with the population portion that have died as a result of heart disease. Again a calculted field was created to sum all the deaths that related to heart disease. 
+Now obesity is the risk factor compared to the cause of death from heart disease. Similar to the previous visualization we will use a scatterplot to see the correlation, if there is any, between the stereotypically associated variables. Number of obese individauls are plotted with the population portion that have died as a result of heart disease. Again a calculated field was created to sum all the deaths that related to heart disease. 
 
+![](./blending2.png)
+
+A fan pattern is visible that shows a linear correlation of greater number of heart disease as a cause of death when there is a larger obesity population.
 
 ####Blending DEMOGRAPHICS and LEADING_CAUSES
 
@@ -55,7 +59,16 @@ For the last two visualizations, DEMOGRAPHICS data was blended with LEADING_CAUS
 
 **3. Distribution of Causes of Death according to Race**
 
-Causes of death are already grouped by ages and separated individually by race, so that each cause has a value for white, other, black and hispanic in certain age groups. Four calculated fields for each race with all the respective age groups was made. By visualizing this data, we can see higher leading causes of death for each race and if there is a correlation due to either genetics or other confounding factors. 
+Causes of death are already grouped by ages and separated individually by race, so that each cause has a value for white, other, black and hispanic in certain age groups. We chose "Black" to show all the causes of death for a single race and made a calculated field of black birth defects, black cancer, etc. with all ages. 
+
+![](./blending3.png)
+
+Cancer and heart disease are the highest causes of death for black population. Possible causes are lack of adequate healthcare or a genetic predisposition. 
 
 **4. Age and Causes of Death**
-For our final visualization, it will be similar to the previous in using the causes of death but instead separating by calculated fields of age groups. Based on the bar graph we see that certain age groups are more at risk for certain causes of death relative to others. 
+
+For our final visualization, it will be similar to the previous in using the causes of death but instead separating by filtering for an age group for individuals under 19. Based on the bar graph we see that individuals under 19 are dying mostly from cancer and suicide compared to other causes. 
+
+![](./blending4.png)
+
+![](./normaldistribution.png)
