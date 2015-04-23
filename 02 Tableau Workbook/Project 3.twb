@@ -1,0 +1,3032 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='win' version='9.0' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 9000.15.0318.1720                                -->
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='DEMOGRAPHICS+ (C##CS329E_PHP274)' inline='true' name='oracle.42116.920193634258' version='9.0'>
+      <connection authentication='RDBMS' class='oracle' port='1521' schema='C##CS329E_PHP274' server='129.152.144.84' service='ORCL.usuniversi01134.oraclecloud.internal' username='C##cs329e_php274'>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[DEMOGRAPHICS].[CHSI_COUNTY_NAME]'>
+              </expression>
+              <expression op='[LEADING_CAUSES].[CHSI_COUNTY_NAME]'>
+              </expression>
+            </expression>
+          </clause>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[DEMOGRAPHICS].[CHSI_COUNTY_NAME]'>
+                </expression>
+                <expression op='[RISK_FACTORS].[CHSI_COUNTY_NAME]'>
+                </expression>
+              </expression>
+            </clause>
+            <relation name='DEMOGRAPHICS' table='[C##CS329E_PHP274].[DEMOGRAPHICS]' type='table' />
+            <relation name='RISK_FACTORS' table='[C##CS329E_PHP274].[RISK_FACTORS]' type='table' />
+          </relation>
+          <relation name='LEADING_CAUSES' table='[C##CS329E_PHP274].[LEADING_CAUSES]' type='table' />
+        </relation>
+        <cols>
+          <map key='[AGE_19_64]' value='[DEMOGRAPHICS].[AGE_19_64]' />
+          <map key='[AGE_19_UNDER]' value='[DEMOGRAPHICS].[AGE_19_UNDER]' />
+          <map key='[AGE_65_84]' value='[DEMOGRAPHICS].[AGE_65_84]' />
+          <map key='[AGE_85_AND_OVER]' value='[DEMOGRAPHICS].[AGE_85_AND_OVER]' />
+          <map key='[ASIAN]' value='[DEMOGRAPHICS].[ASIAN]' />
+          <map key='[A_BL_BIRTHDEF]' value='[LEADING_CAUSES].[A_BL_BIRTHDEF]' />
+          <map key='[A_BL_COMP]' value='[LEADING_CAUSES].[A_BL_COMP]' />
+          <map key='[A_HI_BIRTHDEF]' value='[LEADING_CAUSES].[A_HI_BIRTHDEF]' />
+          <map key='[A_HI_COMP]' value='[LEADING_CAUSES].[A_HI_COMP]' />
+          <map key='[A_OT_BIRTHDEF]' value='[LEADING_CAUSES].[A_OT_BIRTHDEF]' />
+          <map key='[A_OT_COMP]' value='[LEADING_CAUSES].[A_OT_COMP]' />
+          <map key='[A_WH_BIRTHDEF]' value='[LEADING_CAUSES].[A_WH_BIRTHDEF]' />
+          <map key='[A_WH_COMP]' value='[LEADING_CAUSES].[A_WH_COMP]' />
+          <map key='[BLACK]' value='[DEMOGRAPHICS].[BLACK]' />
+          <map key='[B_BL_CANCER]' value='[LEADING_CAUSES].[B_BL_CANCER]' />
+          <map key='[B_BL_HOMICIDE]' value='[LEADING_CAUSES].[B_BL_HOMICIDE]' />
+          <map key='[B_BL_INJURY]' value='[LEADING_CAUSES].[B_BL_INJURY]' />
+          <map key='[B_HI_CANCER]' value='[LEADING_CAUSES].[B_HI_CANCER]' />
+          <map key='[B_HI_HOMICIDE]' value='[LEADING_CAUSES].[B_HI_HOMICIDE]' />
+          <map key='[B_HI_INJURY]' value='[LEADING_CAUSES].[B_HI_INJURY]' />
+          <map key='[B_OT_CANCER]' value='[LEADING_CAUSES].[B_OT_CANCER]' />
+          <map key='[B_OT_HOMICIDE]' value='[LEADING_CAUSES].[B_OT_HOMICIDE]' />
+          <map key='[B_OT_INJURY]' value='[LEADING_CAUSES].[B_OT_INJURY]' />
+          <map key='[B_WH_CANCER]' value='[LEADING_CAUSES].[B_WH_CANCER]' />
+          <map key='[B_WH_HOMICIDE]' value='[LEADING_CAUSES].[B_WH_HOMICIDE]' />
+          <map key='[B_WH_INJURY]' value='[LEADING_CAUSES].[B_WH_INJURY]' />
+          <map key='[CHSI_COUNTY_NAME (LEADING_CAUSES)]' value='[LEADING_CAUSES].[CHSI_COUNTY_NAME]' />
+          <map key='[CHSI_COUNTY_NAME (RISK_FACTORS)]' value='[RISK_FACTORS].[CHSI_COUNTY_NAME]' />
+          <map key='[CHSI_COUNTY_NAME]' value='[DEMOGRAPHICS].[CHSI_COUNTY_NAME]' />
+          <map key='[CHSI_STATE_ABBR (LEADING_CAUSES)]' value='[LEADING_CAUSES].[CHSI_STATE_ABBR]' />
+          <map key='[CHSI_STATE_ABBR (RISK_FACTORS)]' value='[RISK_FACTORS].[CHSI_STATE_ABBR]' />
+          <map key='[CHSI_STATE_ABBR]' value='[DEMOGRAPHICS].[CHSI_STATE_ABBR]' />
+          <map key='[CHSI_STATE_NAME (LEADING_CAUSES)]' value='[LEADING_CAUSES].[CHSI_STATE_NAME]' />
+          <map key='[CHSI_STATE_NAME (RISK_FACTORS)]' value='[RISK_FACTORS].[CHSI_STATE_NAME]' />
+          <map key='[CHSI_STATE_NAME]' value='[DEMOGRAPHICS].[CHSI_STATE_NAME]' />
+          <map key='[COMMUNITY_HEALTH_CENTER_IND]' value='[RISK_FACTORS].[COMMUNITY_HEALTH_CENTER_IND]' />
+          <map key='[COUNTY_FIPS_CODE (LEADING_CAUSES)]' value='[LEADING_CAUSES].[COUNTY_FIPS_CODE]' />
+          <map key='[COUNTY_FIPS_CODE (RISK_FACTORS)]' value='[RISK_FACTORS].[COUNTY_FIPS_CODE]' />
+          <map key='[COUNTY_FIPS_CODE]' value='[DEMOGRAPHICS].[COUNTY_FIPS_CODE]' />
+          <map key='[C_BL_CANCER]' value='[LEADING_CAUSES].[C_BL_CANCER]' />
+          <map key='[C_BL_HOMICIDE]' value='[LEADING_CAUSES].[C_BL_HOMICIDE]' />
+          <map key='[C_BL_INJURY]' value='[LEADING_CAUSES].[C_BL_INJURY]' />
+          <map key='[C_BL_SUICIDE]' value='[LEADING_CAUSES].[C_BL_SUICIDE]' />
+          <map key='[C_HI_CANCER]' value='[LEADING_CAUSES].[C_HI_CANCER]' />
+          <map key='[C_HI_HOMICIDE]' value='[LEADING_CAUSES].[C_HI_HOMICIDE]' />
+          <map key='[C_HI_INJURY]' value='[LEADING_CAUSES].[C_HI_INJURY]' />
+          <map key='[C_HI_SUICIDE]' value='[LEADING_CAUSES].[C_HI_SUICIDE]' />
+          <map key='[C_OT_CANCER]' value='[LEADING_CAUSES].[C_OT_CANCER]' />
+          <map key='[C_OT_HOMICIDE]' value='[LEADING_CAUSES].[C_OT_HOMICIDE]' />
+          <map key='[C_OT_INJURY]' value='[LEADING_CAUSES].[C_OT_INJURY]' />
+          <map key='[C_OT_SUICIDE]' value='[LEADING_CAUSES].[C_OT_SUICIDE]' />
+          <map key='[C_WH_CANCER]' value='[LEADING_CAUSES].[C_WH_CANCER]' />
+          <map key='[C_WH_HOMICIDE]' value='[LEADING_CAUSES].[C_WH_HOMICIDE]' />
+          <map key='[C_WH_INJURY]' value='[LEADING_CAUSES].[C_WH_INJURY]' />
+          <map key='[C_WH_SUICIDE]' value='[LEADING_CAUSES].[C_WH_SUICIDE]' />
+          <map key='[DENTIST_RATE]' value='[RISK_FACTORS].[DENTIST_RATE]' />
+          <map key='[DIABETES]' value='[RISK_FACTORS].[DIABETES]' />
+          <map key='[DISABLED_MEDICARE]' value='[RISK_FACTORS].[DISABLED_MEDICARE]' />
+          <map key='[D_BL_CANCER]' value='[LEADING_CAUSES].[D_BL_CANCER]' />
+          <map key='[D_BL_HEARTDIS]' value='[LEADING_CAUSES].[D_BL_HEARTDIS]' />
+          <map key='[D_BL_HIV]' value='[LEADING_CAUSES].[D_BL_HIV]' />
+          <map key='[D_BL_HOMICIDE]' value='[LEADING_CAUSES].[D_BL_HOMICIDE]' />
+          <map key='[D_BL_INJURY]' value='[LEADING_CAUSES].[D_BL_INJURY]' />
+          <map key='[D_BL_SUICIDE]' value='[LEADING_CAUSES].[D_BL_SUICIDE]' />
+          <map key='[D_HI_CANCER]' value='[LEADING_CAUSES].[D_HI_CANCER]' />
+          <map key='[D_HI_HEARTDIS]' value='[LEADING_CAUSES].[D_HI_HEARTDIS]' />
+          <map key='[D_HI_HIV]' value='[LEADING_CAUSES].[D_HI_HIV]' />
+          <map key='[D_HI_HOMICIDE]' value='[LEADING_CAUSES].[D_HI_HOMICIDE]' />
+          <map key='[D_HI_INJURY]' value='[LEADING_CAUSES].[D_HI_INJURY]' />
+          <map key='[D_HI_SUICIDE]' value='[LEADING_CAUSES].[D_HI_SUICIDE]' />
+          <map key='[D_OT_CANCER]' value='[LEADING_CAUSES].[D_OT_CANCER]' />
+          <map key='[D_OT_HEARTDIS]' value='[LEADING_CAUSES].[D_OT_HEARTDIS]' />
+          <map key='[D_OT_HIV]' value='[LEADING_CAUSES].[D_OT_HIV]' />
+          <map key='[D_OT_HOMICIDE]' value='[LEADING_CAUSES].[D_OT_HOMICIDE]' />
+          <map key='[D_OT_INJURY]' value='[LEADING_CAUSES].[D_OT_INJURY]' />
+          <map key='[D_OT_SUICIDE]' value='[LEADING_CAUSES].[D_OT_SUICIDE]' />
+          <map key='[D_WH_CANCER]' value='[LEADING_CAUSES].[D_WH_CANCER]' />
+          <map key='[D_WH_HEARTDIS]' value='[LEADING_CAUSES].[D_WH_HEARTDIS]' />
+          <map key='[D_WH_HIV]' value='[LEADING_CAUSES].[D_WH_HIV]' />
+          <map key='[D_WH_HOMICIDE]' value='[LEADING_CAUSES].[D_WH_HOMICIDE]' />
+          <map key='[D_WH_INJURY]' value='[LEADING_CAUSES].[D_WH_INJURY]' />
+          <map key='[D_WH_SUICIDE]' value='[LEADING_CAUSES].[D_WH_SUICIDE]' />
+          <map key='[ELDERLY_MEDICARE]' value='[RISK_FACTORS].[ELDERLY_MEDICARE]' />
+          <map key='[E_BL_CANCER]' value='[LEADING_CAUSES].[E_BL_CANCER]' />
+          <map key='[E_BL_HEARTDIS]' value='[LEADING_CAUSES].[E_BL_HEARTDIS]' />
+          <map key='[E_HI_CANCER]' value='[LEADING_CAUSES].[E_HI_CANCER]' />
+          <map key='[E_HI_HEARTDIS]' value='[LEADING_CAUSES].[E_HI_HEARTDIS]' />
+          <map key='[E_OT_CANCER]' value='[LEADING_CAUSES].[E_OT_CANCER]' />
+          <map key='[E_OT_HEARTDIS]' value='[LEADING_CAUSES].[E_OT_HEARTDIS]' />
+          <map key='[E_WH_CANCER]' value='[LEADING_CAUSES].[E_WH_CANCER]' />
+          <map key='[E_WH_HEARTDIS]' value='[LEADING_CAUSES].[E_WH_HEARTDIS]' />
+          <map key='[FEW_FRUIT_VEG]' value='[RISK_FACTORS].[FEW_FRUIT_VEG]' />
+          <map key='[F_BL_CANCER]' value='[LEADING_CAUSES].[F_BL_CANCER]' />
+          <map key='[F_BL_HEARTDIS]' value='[LEADING_CAUSES].[F_BL_HEARTDIS]' />
+          <map key='[F_HI_CANCER]' value='[LEADING_CAUSES].[F_HI_CANCER]' />
+          <map key='[F_HI_HEARTDIS]' value='[LEADING_CAUSES].[F_HI_HEARTDIS]' />
+          <map key='[F_OT_CANCER]' value='[LEADING_CAUSES].[F_OT_CANCER]' />
+          <map key='[F_OT_HEARTDIS]' value='[LEADING_CAUSES].[F_OT_HEARTDIS]' />
+          <map key='[F_WH_CANCER]' value='[LEADING_CAUSES].[F_WH_CANCER]' />
+          <map key='[F_WH_HEARTDIS]' value='[LEADING_CAUSES].[F_WH_HEARTDIS]' />
+          <map key='[HIGH_BLOOD_PRES]' value='[RISK_FACTORS].[HIGH_BLOOD_PRES]' />
+          <map key='[HISPANIC]' value='[DEMOGRAPHICS].[HISPANIC]' />
+          <map key='[HPSA_IND]' value='[RISK_FACTORS].[HPSA_IND]' />
+          <map key='[NATIVE_AMERICAN]' value='[DEMOGRAPHICS].[NATIVE_AMERICAN]' />
+          <map key='[NO_EXERCISE]' value='[RISK_FACTORS].[NO_EXERCISE]' />
+          <map key='[OBESITY]' value='[RISK_FACTORS].[OBESITY]' />
+          <map key='[POPULATION_DENSITY]' value='[DEMOGRAPHICS].[POPULATION_DENSITY]' />
+          <map key='[POPULATION_SIZE]' value='[DEMOGRAPHICS].[POPULATION_SIZE]' />
+          <map key='[POVERTY]' value='[DEMOGRAPHICS].[POVERTY]' />
+          <map key='[PRIM_CARE_PHYS_RATE]' value='[RISK_FACTORS].[PRIM_CARE_PHYS_RATE]' />
+          <map key='[SMOKER]' value='[RISK_FACTORS].[SMOKER]' />
+          <map key='[STATE_FIPS_CODE (LEADING_CAUSES)]' value='[LEADING_CAUSES].[STATE_FIPS_CODE]' />
+          <map key='[STATE_FIPS_CODE (RISK_FACTORS)]' value='[RISK_FACTORS].[STATE_FIPS_CODE]' />
+          <map key='[STATE_FIPS_CODE]' value='[DEMOGRAPHICS].[STATE_FIPS_CODE]' />
+          <map key='[STRATA_ID_NUMBER (LEADING_CAUSES)]' value='[LEADING_CAUSES].[STRATA_ID_NUMBER]' />
+          <map key='[STRATA_ID_NUMBER]' value='[RISK_FACTORS].[STRATA_ID_NUMBER]' />
+          <map key='[UNINSURED]' value='[RISK_FACTORS].[UNINSURED]' />
+          <map key='[WHITE]' value='[DEMOGRAPHICS].[WHITE]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>STATE_FIPS_CODE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[STATE_FIPS_CODE]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>STATE_FIPS_CODE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTY_FIPS_CODE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[COUNTY_FIPS_CODE]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>COUNTY_FIPS_CODE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHSI_COUNTY_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CHSI_COUNTY_NAME]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>CHSI_COUNTY_NAME</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHSI_STATE_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CHSI_STATE_NAME]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>CHSI_STATE_NAME</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHSI_STATE_ABBR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CHSI_STATE_ABBR]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>CHSI_STATE_ABBR</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POPULATION_SIZE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[POPULATION_SIZE]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>POPULATION_SIZE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POPULATION_DENSITY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[POPULATION_DENSITY]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>POPULATION_DENSITY</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POVERTY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[POVERTY]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>POVERTY</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGE_19_UNDER</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AGE_19_UNDER]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>AGE_19_UNDER</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGE_19_64</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AGE_19_64]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>AGE_19_64</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGE_65_84</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AGE_65_84]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>AGE_65_84</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGE_85_AND_OVER</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AGE_85_AND_OVER]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>AGE_85_AND_OVER</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WHITE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WHITE]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>WHITE</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BLACK</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BLACK]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>BLACK</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NATIVE_AMERICAN</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NATIVE_AMERICAN]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>NATIVE_AMERICAN</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ASIAN</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ASIAN]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>ASIAN</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HISPANIC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HISPANIC]</local-name>
+            <parent-name>[DEMOGRAPHICS]</parent-name>
+            <remote-alias>HISPANIC</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE_FIPS_CODE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[STATE_FIPS_CODE (RISK_FACTORS)]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>STATE_FIPS_CODE</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTY_FIPS_CODE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[COUNTY_FIPS_CODE (RISK_FACTORS)]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>COUNTY_FIPS_CODE</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHSI_COUNTY_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CHSI_COUNTY_NAME (RISK_FACTORS)]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>CHSI_COUNTY_NAME</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHSI_STATE_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CHSI_STATE_NAME (RISK_FACTORS)]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>CHSI_STATE_NAME</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHSI_STATE_ABBR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CHSI_STATE_ABBR (RISK_FACTORS)]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>CHSI_STATE_ABBR</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STRATA_ID_NUMBER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[STRATA_ID_NUMBER]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>STRATA_ID_NUMBER</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NO_EXERCISE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[NO_EXERCISE]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>NO_EXERCISE</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEW_FRUIT_VEG</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[FEW_FRUIT_VEG]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>FEW_FRUIT_VEG</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBESITY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[OBESITY]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>OBESITY</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HIGH_BLOOD_PRES</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[HIGH_BLOOD_PRES]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>HIGH_BLOOD_PRES</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SMOKER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[SMOKER]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>SMOKER</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DIABETES</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[DIABETES]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>DIABETES</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UNINSURED</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[UNINSURED]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>UNINSURED</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ELDERLY_MEDICARE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ELDERLY_MEDICARE]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>ELDERLY_MEDICARE</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DISABLED_MEDICARE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[DISABLED_MEDICARE]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>DISABLED_MEDICARE</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRIM_CARE_PHYS_RATE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[PRIM_CARE_PHYS_RATE]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>PRIM_CARE_PHYS_RATE</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DENTIST_RATE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[DENTIST_RATE]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>DENTIST_RATE</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMMUNITY_HEALTH_CENTER_IND</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[COMMUNITY_HEALTH_CENTER_IND]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>COMMUNITY_HEALTH_CENTER_IND</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HPSA_IND</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[HPSA_IND]</local-name>
+            <parent-name>[RISK_FACTORS]</parent-name>
+            <remote-alias>HPSA_IND</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE_FIPS_CODE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[STATE_FIPS_CODE (LEADING_CAUSES)]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>STATE_FIPS_CODE</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTY_FIPS_CODE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[COUNTY_FIPS_CODE (LEADING_CAUSES)]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>COUNTY_FIPS_CODE</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHSI_COUNTY_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CHSI_COUNTY_NAME (LEADING_CAUSES)]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>CHSI_COUNTY_NAME</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHSI_STATE_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CHSI_STATE_NAME (LEADING_CAUSES)]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>CHSI_STATE_NAME</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHSI_STATE_ABBR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CHSI_STATE_ABBR (LEADING_CAUSES)]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>CHSI_STATE_ABBR</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STRATA_ID_NUMBER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[STRATA_ID_NUMBER (LEADING_CAUSES)]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>STRATA_ID_NUMBER</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A_WH_COMP</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[A_WH_COMP]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>A_WH_COMP</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A_BL_COMP</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[A_BL_COMP]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>A_BL_COMP</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A_OT_COMP</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[A_OT_COMP]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>A_OT_COMP</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A_HI_COMP</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[A_HI_COMP]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>A_HI_COMP</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A_WH_BIRTHDEF</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[A_WH_BIRTHDEF]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>A_WH_BIRTHDEF</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A_BL_BIRTHDEF</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[A_BL_BIRTHDEF]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>A_BL_BIRTHDEF</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A_OT_BIRTHDEF</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[A_OT_BIRTHDEF]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>A_OT_BIRTHDEF</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A_HI_BIRTHDEF</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[A_HI_BIRTHDEF]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>A_HI_BIRTHDEF</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B_WH_INJURY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[B_WH_INJURY]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>B_WH_INJURY</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B_BL_INJURY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[B_BL_INJURY]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>B_BL_INJURY</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B_OT_INJURY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[B_OT_INJURY]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>B_OT_INJURY</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B_HI_INJURY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[B_HI_INJURY]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>B_HI_INJURY</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B_WH_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[B_WH_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>B_WH_CANCER</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B_BL_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[B_BL_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>B_BL_CANCER</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B_OT_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[B_OT_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>B_OT_CANCER</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B_HI_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[B_HI_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>B_HI_CANCER</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B_WH_HOMICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[B_WH_HOMICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>B_WH_HOMICIDE</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B_BL_HOMICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[B_BL_HOMICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>B_BL_HOMICIDE</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B_OT_HOMICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[B_OT_HOMICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>B_OT_HOMICIDE</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B_HI_HOMICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[B_HI_HOMICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>B_HI_HOMICIDE</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_WH_INJURY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_WH_INJURY]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_WH_INJURY</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_BL_INJURY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_BL_INJURY]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_BL_INJURY</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_OT_INJURY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_OT_INJURY]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_OT_INJURY</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_HI_INJURY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_HI_INJURY]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_HI_INJURY</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_WH_HOMICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_WH_HOMICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_WH_HOMICIDE</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_BL_HOMICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_BL_HOMICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_BL_HOMICIDE</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_OT_HOMICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_OT_HOMICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_OT_HOMICIDE</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_HI_HOMICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_HI_HOMICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_HI_HOMICIDE</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_WH_SUICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_WH_SUICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_WH_SUICIDE</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_BL_SUICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_BL_SUICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_BL_SUICIDE</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_OT_SUICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_OT_SUICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_OT_SUICIDE</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_HI_SUICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_HI_SUICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_HI_SUICIDE</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_WH_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_WH_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_WH_CANCER</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_BL_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_BL_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_BL_CANCER</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_OT_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_OT_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_OT_CANCER</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C_HI_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[C_HI_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>C_HI_CANCER</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_WH_INJURY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_WH_INJURY]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_WH_INJURY</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_BL_INJURY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_BL_INJURY]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_BL_INJURY</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_OT_INJURY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_OT_INJURY]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_OT_INJURY</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_HI_INJURY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_HI_INJURY]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_HI_INJURY</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_WH_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_WH_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_WH_CANCER</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_BL_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_BL_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_BL_CANCER</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_OT_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_OT_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_OT_CANCER</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_HI_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_HI_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_HI_CANCER</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_WH_HEARTDIS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_WH_HEARTDIS]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_WH_HEARTDIS</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_BL_HEARTDIS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_BL_HEARTDIS]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_BL_HEARTDIS</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_OT_HEARTDIS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_OT_HEARTDIS]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_OT_HEARTDIS</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_HI_HEARTDIS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_HI_HEARTDIS]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_HI_HEARTDIS</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_WH_SUICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_WH_SUICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_WH_SUICIDE</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_BL_SUICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_BL_SUICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_BL_SUICIDE</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_OT_SUICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_OT_SUICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_OT_SUICIDE</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_HI_SUICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_HI_SUICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_HI_SUICIDE</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_WH_HIV</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_WH_HIV]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_WH_HIV</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_BL_HIV</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_BL_HIV]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_BL_HIV</remote-alias>
+            <ordinal>97</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_OT_HIV</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_OT_HIV]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_OT_HIV</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_HI_HIV</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_HI_HIV]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_HI_HIV</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_WH_HOMICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_WH_HOMICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_WH_HOMICIDE</remote-alias>
+            <ordinal>100</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_BL_HOMICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_BL_HOMICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_BL_HOMICIDE</remote-alias>
+            <ordinal>101</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_OT_HOMICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_OT_HOMICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_OT_HOMICIDE</remote-alias>
+            <ordinal>102</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_HI_HOMICIDE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[D_HI_HOMICIDE]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>D_HI_HOMICIDE</remote-alias>
+            <ordinal>103</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_WH_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[E_WH_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>E_WH_CANCER</remote-alias>
+            <ordinal>104</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_BL_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[E_BL_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>E_BL_CANCER</remote-alias>
+            <ordinal>105</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_OT_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[E_OT_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>E_OT_CANCER</remote-alias>
+            <ordinal>106</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_HI_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[E_HI_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>E_HI_CANCER</remote-alias>
+            <ordinal>107</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_WH_HEARTDIS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[E_WH_HEARTDIS]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>E_WH_HEARTDIS</remote-alias>
+            <ordinal>108</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_BL_HEARTDIS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[E_BL_HEARTDIS]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>E_BL_HEARTDIS</remote-alias>
+            <ordinal>109</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_OT_HEARTDIS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[E_OT_HEARTDIS]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>E_OT_HEARTDIS</remote-alias>
+            <ordinal>110</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_HI_HEARTDIS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[E_HI_HEARTDIS]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>E_HI_HEARTDIS</remote-alias>
+            <ordinal>111</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_WH_HEARTDIS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[F_WH_HEARTDIS]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>F_WH_HEARTDIS</remote-alias>
+            <ordinal>112</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_BL_HEARTDIS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[F_BL_HEARTDIS]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>F_BL_HEARTDIS</remote-alias>
+            <ordinal>113</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_OT_HEARTDIS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[F_OT_HEARTDIS]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>F_OT_HEARTDIS</remote-alias>
+            <ordinal>114</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_HI_HEARTDIS</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[F_HI_HEARTDIS]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>F_HI_HEARTDIS</remote-alias>
+            <ordinal>115</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_WH_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[F_WH_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>F_WH_CANCER</remote-alias>
+            <ordinal>116</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_BL_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[F_BL_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>F_BL_CANCER</remote-alias>
+            <ordinal>117</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_OT_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[F_OT_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>F_OT_CANCER</remote-alias>
+            <ordinal>118</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_HI_CANCER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[F_HI_CANCER]</local-name>
+            <parent-name>[LEADING_CAUSES]</parent-name>
+            <remote-alias>F_HI_CANCER</remote-alias>
+            <ordinal>119</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age 19 64' datatype='real' name='[AGE_19_64]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Age 19 Under' datatype='real' name='[AGE_19_UNDER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Age 65 84' datatype='real' name='[AGE_65_84]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Age 85 And Over' datatype='real' name='[AGE_85_AND_OVER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Asian' datatype='real' name='[ASIAN]' role='measure' type='quantitative'>
+      </column>
+      <column caption='A Bl Birthdef' datatype='real' name='[A_BL_BIRTHDEF]' role='measure' type='quantitative'>
+      </column>
+      <column caption='A Bl Comp' datatype='real' name='[A_BL_COMP]' role='measure' type='quantitative'>
+      </column>
+      <column caption='A Hi Birthdef' datatype='real' name='[A_HI_BIRTHDEF]' role='measure' type='quantitative'>
+      </column>
+      <column caption='A Hi Comp' datatype='real' name='[A_HI_COMP]' role='measure' type='quantitative'>
+      </column>
+      <column caption='A Ot Birthdef' datatype='real' name='[A_OT_BIRTHDEF]' role='measure' type='quantitative'>
+      </column>
+      <column caption='A Ot Comp' datatype='real' name='[A_OT_COMP]' role='measure' type='quantitative'>
+      </column>
+      <column caption='A Wh Birthdef' datatype='real' name='[A_WH_BIRTHDEF]' role='measure' type='quantitative'>
+      </column>
+      <column caption='A Wh Comp' datatype='real' name='[A_WH_COMP]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Black' datatype='real' name='[BLACK]' role='measure' type='quantitative'>
+      </column>
+      <column caption='B Bl Cancer' datatype='real' name='[B_BL_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='B Bl Homicide' datatype='real' name='[B_BL_HOMICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='B Bl Injury' datatype='real' name='[B_BL_INJURY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='B Hi Cancer' datatype='real' name='[B_HI_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='B Hi Homicide' datatype='real' name='[B_HI_HOMICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='B Hi Injury' datatype='real' name='[B_HI_INJURY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='B Ot Cancer' datatype='real' name='[B_OT_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='B Ot Homicide' datatype='real' name='[B_OT_HOMICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='B Ot Injury' datatype='real' name='[B_OT_INJURY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='B Wh Cancer' datatype='real' name='[B_WH_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='B Wh Homicide' datatype='real' name='[B_WH_HOMICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='B Wh Injury' datatype='real' name='[B_WH_INJURY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Chsi County Name (Leading Causes)' datatype='string' name='[CHSI_COUNTY_NAME (LEADING_CAUSES)]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+      </column>
+      <column caption='Chsi County Name (Risk Factors)' datatype='string' name='[CHSI_COUNTY_NAME (RISK_FACTORS)]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+      </column>
+      <column caption='Chsi County Name' datatype='string' name='[CHSI_COUNTY_NAME]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+      </column>
+      <column caption='Chsi State Abbr (Leading Causes)' datatype='string' name='[CHSI_STATE_ABBR (LEADING_CAUSES)]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Chsi State Abbr (Risk Factors)' datatype='string' name='[CHSI_STATE_ABBR (RISK_FACTORS)]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Chsi State Abbr' datatype='string' name='[CHSI_STATE_ABBR]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Chsi State Name (Leading Causes)' datatype='string' name='[CHSI_STATE_NAME (LEADING_CAUSES)]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+      </column>
+      <column caption='Chsi State Name (Risk Factors)' datatype='string' name='[CHSI_STATE_NAME (RISK_FACTORS)]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+      </column>
+      <column caption='Chsi State Name' datatype='string' name='[CHSI_STATE_NAME]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+      </column>
+      <column caption='Community Health Center Ind' datatype='real' name='[COMMUNITY_HEALTH_CENTER_IND]' role='measure' type='quantitative'>
+      </column>
+      <column caption='County Fips Code (Leading Causes)' datatype='real' name='[COUNTY_FIPS_CODE (LEADING_CAUSES)]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='County Fips Code (Risk Factors)' datatype='real' name='[COUNTY_FIPS_CODE (RISK_FACTORS)]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='County Fips Code' datatype='real' name='[COUNTY_FIPS_CODE]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='C Bl Cancer' datatype='real' name='[C_BL_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Bl Homicide' datatype='real' name='[C_BL_HOMICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Bl Injury' datatype='real' name='[C_BL_INJURY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Bl Suicide' datatype='real' name='[C_BL_SUICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Hi Cancer' datatype='real' name='[C_HI_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Hi Homicide' datatype='real' name='[C_HI_HOMICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Hi Injury' datatype='real' name='[C_HI_INJURY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Hi Suicide' datatype='real' name='[C_HI_SUICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Ot Cancer' datatype='real' name='[C_OT_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Ot Homicide' datatype='real' name='[C_OT_HOMICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Ot Injury' datatype='real' name='[C_OT_INJURY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Ot Suicide' datatype='real' name='[C_OT_SUICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Wh Cancer' datatype='real' name='[C_WH_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Wh Homicide' datatype='real' name='[C_WH_HOMICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Wh Injury' datatype='real' name='[C_WH_INJURY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='C Wh Suicide' datatype='real' name='[C_WH_SUICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Black Suicide' datatype='real' name='[Calculation_0470422225950990]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[C_BL_SUICIDE]+[D_BL_SUICIDE]' />
+      </column>
+      <column caption='Smoker Population' datatype='real' name='[Calculation_0480422223424771]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[SMOKER]*[POPULATION_SIZE]' />
+      </column>
+      <column caption='Total Cancer' datatype='real' name='[Calculation_0590422221650457]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[B_BL_CANCER]+[B_HI_CANCER]+[B_OT_CANCER]+[B_WH_CANCER]+[C_BL_CANCER]+[C_HI_CANCER]+[C_OT_CANCER]+[C_WH_CANCER]+[D_BL_CANCER]+[D_HI_CANCER]+[D_OT_CANCER]+[D_WH_CANCER]+[E_BL_CANCER]+[E_HI_CANCER]+[E_OT_CANCER]+[E_WH_CANCER]+[F_BL_CANCER]+[F_HI_CANCER]+[F_OT_CANCER]+[F_WH_CANCER]' />
+      </column>
+      <column caption='Black Pregnancy Complications' datatype='real' name='[Calculation_1350422225832413]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[A_BL_COMP]' />
+      </column>
+      <column caption='Total Homicide' datatype='real' name='[Calculation_2000422221953412]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[B_BL_HOMICIDE]+[B_HI_HOMICIDE]+[B_OT_HOMICIDE]+[B_WH_HOMICIDE]+[C_BL_HOMICIDE]+[C_HI_HOMICIDE]+[C_OT_HOMICIDE]+[C_WH_HOMICIDE]+[D_BL_HOMICIDE]+[C_HI_HOMICIDE]+[C_WH_HOMICIDE]+[D_BL_HOMICIDE]+[D_OT_HOMICIDE]+[D_WH_HOMICIDE]' />
+      </column>
+      <column caption='Total Heart Disease' datatype='real' name='[Calculation_2310422223039208]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[D_BL_HEARTDIS]+[D_HI_HEARTDIS]+[D_OT_HEARTDIS]+[D_WH_HEARTDIS]+[E_BL_HEARTDIS]+[E_OT_HEARTDIS]+[E_WH_HEARTDIS]+[F_BL_HEARTDIS]+[F_HI_HEARTDIS]+[F_OT_HEARTDIS]+[F_WH_HEARTDIS]' />
+      </column>
+      <column caption='Total Injuries' datatype='real' name='[Calculation_2560422222246413]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[B_BL_INJURY]+[B_HI_INJURY]+[B_OT_INJURY]+[B_WH_INJURY]+[C_BL_INJURY]+[C_HI_INJURY]+[C_OT_INJURY]+[C_WH_INJURY]+[D_BL_INJURY]+[D_HI_INJURY]+[D_OT_INJURY]+[D_WH_INJURY]' />
+      </column>
+      <column caption='Black Cancer' datatype='real' name='[Calculation_2960422225213538]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[B_BL_CANCER]+[C_BL_CANCER]+[D_BL_CANCER]+[E_BL_CANCER]+[F_BL_CANCER]' />
+      </column>
+      <column caption='Total Pregnancy Complications' datatype='real' name='[Calculation_4320422221555365]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[A_BL_COMP]+[A_HI_COMP]+[A_OT_COMP]+[A_WH_COMP]' />
+      </column>
+      <column caption='Black Birthdefects' datatype='real' name='[Calculation_4520422225821006]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[A_BL_BIRTHDEF]' />
+      </column>
+      <column caption='Black Heart Disease' datatype='real' name='[Calculation_4710422230727678]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[D_BL_HEARTDIS]+[E_BL_HEARTDIS]+[F_BL_HEARTDIS]' />
+      </column>
+      <column caption='Total Birthdefects' datatype='real' name='[Calculation_5430422221443535]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[A_BL_BIRTHDEF]+[A_HI_BIRTHDEF]+[A_OT_BIRTHDEF]+[A_WH_BIRTHDEF]' />
+      </column>
+      <column caption='Total Suicide' datatype='real' name='[Calculation_5750422222804084]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[C_BL_SUICIDE]+[C_HI_SUICIDE]+[C_OT_SUICIDE]+[C_WH_SUICIDE]+[D_BL_SUICIDE]+[D_HI_SUICIDE]+[D_OT_SUICIDE]+[D_WH_SUICIDE]' />
+      </column>
+      <column caption='Black Homicide' datatype='real' name='[Calculation_8550422225320913]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[B_BL_HOMICIDE]+[C_BL_HOMICIDE]+[D_BL_HOMICIDE]' />
+      </column>
+      <column caption='Black Injury' datatype='real' name='[Calculation_8780422225556052]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[B_BL_INJURY]+[C_BL_INJURY]+[D_BL_INJURY]' />
+      </column>
+      <column caption='Obesity Population' datatype='real' name='[Calculation_9950422223811803]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[OBESITY]*[POPULATION_SIZE]' />
+      </column>
+      <column caption='Dentist Rate' datatype='real' name='[DENTIST_RATE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Diabetes' datatype='real' name='[DIABETES]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Disabled Medicare' datatype='real' name='[DISABLED_MEDICARE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Bl Cancer' datatype='real' name='[D_BL_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Bl Heartdis' datatype='real' name='[D_BL_HEARTDIS]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Bl Hiv' datatype='real' name='[D_BL_HIV]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Bl Homicide' datatype='real' name='[D_BL_HOMICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Bl Injury' datatype='real' name='[D_BL_INJURY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Bl Suicide' datatype='real' name='[D_BL_SUICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Hi Cancer' datatype='real' name='[D_HI_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Hi Heartdis' datatype='real' name='[D_HI_HEARTDIS]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Hi Hiv' datatype='real' name='[D_HI_HIV]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Hi Homicide' datatype='real' name='[D_HI_HOMICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Hi Injury' datatype='real' name='[D_HI_INJURY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Hi Suicide' datatype='real' name='[D_HI_SUICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Ot Cancer' datatype='real' name='[D_OT_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Ot Heartdis' datatype='real' name='[D_OT_HEARTDIS]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Ot Hiv' datatype='real' name='[D_OT_HIV]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Ot Homicide' datatype='real' name='[D_OT_HOMICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Ot Injury' datatype='real' name='[D_OT_INJURY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Ot Suicide' datatype='real' name='[D_OT_SUICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Wh Cancer' datatype='real' name='[D_WH_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Wh Heartdis' datatype='real' name='[D_WH_HEARTDIS]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Wh Hiv' datatype='real' name='[D_WH_HIV]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Wh Homicide' datatype='real' name='[D_WH_HOMICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Wh Injury' datatype='real' name='[D_WH_INJURY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='D Wh Suicide' datatype='real' name='[D_WH_SUICIDE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Elderly Medicare' datatype='real' name='[ELDERLY_MEDICARE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='E Bl Cancer' datatype='real' name='[E_BL_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='E Bl Heartdis' datatype='real' name='[E_BL_HEARTDIS]' role='measure' type='quantitative'>
+      </column>
+      <column caption='E Hi Cancer' datatype='real' name='[E_HI_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='E Hi Heartdis' datatype='real' name='[E_HI_HEARTDIS]' role='measure' type='quantitative'>
+      </column>
+      <column caption='E Ot Cancer' datatype='real' name='[E_OT_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='E Ot Heartdis' datatype='real' name='[E_OT_HEARTDIS]' role='measure' type='quantitative'>
+      </column>
+      <column caption='E Wh Cancer' datatype='real' name='[E_WH_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='E Wh Heartdis' datatype='real' name='[E_WH_HEARTDIS]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Few Fruit Veg' datatype='real' name='[FEW_FRUIT_VEG]' role='measure' type='quantitative'>
+      </column>
+      <column caption='F Bl Cancer' datatype='real' name='[F_BL_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='F Bl Heartdis' datatype='real' name='[F_BL_HEARTDIS]' role='measure' type='quantitative'>
+      </column>
+      <column caption='F Hi Cancer' datatype='real' name='[F_HI_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='F Hi Heartdis' datatype='real' name='[F_HI_HEARTDIS]' role='measure' type='quantitative'>
+      </column>
+      <column caption='F Ot Cancer' datatype='real' name='[F_OT_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='F Ot Heartdis' datatype='real' name='[F_OT_HEARTDIS]' role='measure' type='quantitative'>
+      </column>
+      <column caption='F Wh Cancer' datatype='real' name='[F_WH_CANCER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='F Wh Heartdis' datatype='real' name='[F_WH_HEARTDIS]' role='measure' type='quantitative'>
+      </column>
+      <column caption='High Blood Pres' datatype='real' name='[HIGH_BLOOD_PRES]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Hispanic' datatype='real' name='[HISPANIC]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Hpsa Ind' datatype='real' name='[HPSA_IND]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Native American' datatype='real' name='[NATIVE_AMERICAN]' role='measure' type='quantitative'>
+      </column>
+      <column caption='No Exercise' datatype='real' name='[NO_EXERCISE]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Obesity' datatype='real' name='[OBESITY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Population Density' datatype='real' name='[POPULATION_DENSITY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Population Size' datatype='real' name='[POPULATION_SIZE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Poverty' datatype='real' name='[POVERTY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Prim Care Phys Rate' datatype='real' name='[PRIM_CARE_PHYS_RATE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Smoker' datatype='real' name='[SMOKER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='State Fips Code (Leading Causes)' datatype='real' name='[STATE_FIPS_CODE (LEADING_CAUSES)]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='State Fips Code (Risk Factors)' datatype='real' name='[STATE_FIPS_CODE (RISK_FACTORS)]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='State Fips Code' datatype='real' name='[STATE_FIPS_CODE]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='Strata Id Number (Leading Causes)' datatype='real' name='[STRATA_ID_NUMBER (LEADING_CAUSES)]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='Strata Id Number' datatype='real' name='[STRATA_ID_NUMBER]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='Uninsured' datatype='real' name='[UNINSURED]' role='measure' type='quantitative'>
+      </column>
+      <column caption='White' datatype='real' name='[WHITE]' role='measure' type='quantitative'>
+      </column>
+      <drill-paths>
+        <drill-path name='CHSI_STATE_NAME, CHSI_COUNTY_NAME'>
+          <field>[CHSI_STATE_NAME]</field>
+          <field>[CHSI_COUNTY_NAME]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Distributed Causes of Death of All Black Americans'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DEMOGRAPHICS+ (C##CS329E_PHP274)' name='oracle.42116.920193634258' />
+          </datasources>
+          <datasource-dependencies datasource='oracle.42116.920193634258'>
+            <column caption='Black Suicide' datatype='real' name='[Calculation_0470422225950990]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[C_BL_SUICIDE]+[D_BL_SUICIDE]' />
+            </column>
+            <column caption='Black Pregnancy Complications' datatype='real' name='[Calculation_1350422225832413]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[A_BL_COMP]' />
+            </column>
+            <column caption='Black Cancer' datatype='real' name='[Calculation_2960422225213538]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B_BL_CANCER]+[C_BL_CANCER]+[D_BL_CANCER]+[E_BL_CANCER]+[F_BL_CANCER]' />
+            </column>
+            <column caption='Black Birthdefects' datatype='real' name='[Calculation_4520422225821006]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[A_BL_BIRTHDEF]' />
+            </column>
+            <column caption='Black Heart Disease' datatype='real' name='[Calculation_4710422230727678]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[D_BL_HEARTDIS]+[E_BL_HEARTDIS]+[F_BL_HEARTDIS]' />
+            </column>
+            <column caption='Black Homicide' datatype='real' name='[Calculation_8550422225320913]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B_BL_HOMICIDE]+[C_BL_HOMICIDE]+[D_BL_HOMICIDE]' />
+            </column>
+            <column caption='Black Injury' datatype='real' name='[Calculation_8780422225556052]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B_BL_INJURY]+[C_BL_INJURY]+[D_BL_INJURY]' />
+            </column>
+            <column-instance column='[Calculation_0470422225950990]' derivation='Sum' name='[sum:Calculation_0470422225950990:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1350422225832413]' derivation='Sum' name='[sum:Calculation_1350422225832413:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2960422225213538]' derivation='Sum' name='[sum:Calculation_2960422225213538:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4520422225821006]' derivation='Sum' name='[sum:Calculation_4520422225821006:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4710422230727678]' derivation='Sum' name='[sum:Calculation_4710422230727678:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_8550422225320913]' derivation='Sum' name='[sum:Calculation_8550422225320913:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_8780422225556052]' derivation='Sum' name='[sum:Calculation_8780422225556052:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[oracle.42116.920193634258].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[oracle.42116.920193634258].[sum:Calculation_4520422225821006:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[oracle.42116.920193634258].[sum:Calculation_2960422225213538:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[oracle.42116.920193634258].[sum:Calculation_4710422230727678:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[oracle.42116.920193634258].[sum:Calculation_8550422225320913:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[oracle.42116.920193634258].[sum:Calculation_8780422225556052:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[oracle.42116.920193634258].[sum:Calculation_1350422225832413:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[oracle.42116.920193634258].[sum:Calculation_0470422225950990:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[oracle.42116.920193634258].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane id='5'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[oracle.42116.920193634258].[Multiple Values]</rows>
+        <cols>[oracle.42116.920193634258].[:Measure Names]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Heart Disease vs. Obesity'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DEMOGRAPHICS+ (C##CS329E_PHP274)' name='oracle.42116.920193634258' />
+          </datasources>
+          <datasource-dependencies datasource='oracle.42116.920193634258'>
+            <column caption='Chsi State Name (Leading Causes)' datatype='string' name='[CHSI_STATE_NAME (LEADING_CAUSES)]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+            </column>
+            <column caption='Total Heart Disease' datatype='real' name='[Calculation_2310422223039208]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[D_BL_HEARTDIS]+[D_HI_HEARTDIS]+[D_OT_HEARTDIS]+[D_WH_HEARTDIS]+[E_BL_HEARTDIS]+[E_OT_HEARTDIS]+[E_WH_HEARTDIS]+[F_BL_HEARTDIS]+[F_HI_HEARTDIS]+[F_OT_HEARTDIS]+[F_WH_HEARTDIS]' />
+            </column>
+            <column caption='Obesity Population' datatype='real' name='[Calculation_9950422223811803]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[OBESITY]*[POPULATION_SIZE]' />
+            </column>
+            <column-instance column='[CHSI_STATE_NAME (LEADING_CAUSES)]' derivation='None' name='[none:CHSI_STATE_NAME (LEADING_CAUSES):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2310422223039208]' derivation='Sum' name='[sum:Calculation_2310422223039208:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_9950422223811803]' derivation='Sum' name='[sum:Calculation_9950422223811803:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[oracle.42116.920193634258].[none:CHSI_STATE_NAME (LEADING_CAUSES):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[oracle.42116.920193634258].[sum:Calculation_9950422223811803:qk]</rows>
+        <cols>[oracle.42116.920193634258].[sum:Calculation_2310422223039208:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+          </datasources>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols></cols>
+      </table>
+    </worksheet>
+    <worksheet name='Smoking vs. Cancer'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DEMOGRAPHICS+ (C##CS329E_PHP274)' name='oracle.42116.920193634258' />
+          </datasources>
+          <datasource-dependencies datasource='oracle.42116.920193634258'>
+            <column caption='Chsi State Name (Leading Causes)' datatype='string' name='[CHSI_STATE_NAME (LEADING_CAUSES)]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+            </column>
+            <column caption='Smoker Population' datatype='real' name='[Calculation_0480422223424771]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[SMOKER]*[POPULATION_SIZE]' />
+            </column>
+            <column caption='Total Cancer' datatype='real' name='[Calculation_0590422221650457]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B_BL_CANCER]+[B_HI_CANCER]+[B_OT_CANCER]+[B_WH_CANCER]+[C_BL_CANCER]+[C_HI_CANCER]+[C_OT_CANCER]+[C_WH_CANCER]+[D_BL_CANCER]+[D_HI_CANCER]+[D_OT_CANCER]+[D_WH_CANCER]+[E_BL_CANCER]+[E_HI_CANCER]+[E_OT_CANCER]+[E_WH_CANCER]+[F_BL_CANCER]+[F_HI_CANCER]+[F_OT_CANCER]+[F_WH_CANCER]' />
+            </column>
+            <column-instance column='[CHSI_STATE_NAME (LEADING_CAUSES)]' derivation='None' name='[none:CHSI_STATE_NAME (LEADING_CAUSES):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0480422223424771]' derivation='Sum' name='[sum:Calculation_0480422223424771:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0590422221650457]' derivation='Sum' name='[sum:Calculation_0590422221650457:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[oracle.42116.920193634258].[none:CHSI_STATE_NAME (LEADING_CAUSES):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[oracle.42116.920193634258].[sum:Calculation_0480422223424771:qk]</rows>
+        <cols>[oracle.42116.920193634258].[sum:Calculation_0590422221650457:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Smoking vs. Cancer'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[oracle.42116.920193634258].[none:CHSI_STATE_NAME (LEADING_CAUSES):nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[oracle.42116.920193634258].[none:CHSI_STATE_NAME (LEADING_CAUSES):nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Heart Disease vs. Obesity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[oracle.42116.920193634258].[none:CHSI_STATE_NAME (LEADING_CAUSES):nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[oracle.42116.920193634258].[none:CHSI_STATE_NAME (LEADING_CAUSES):nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Distributed Causes of Death of All Black Americans'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[oracle.42116.920193634258].[:Measure Names]</field>
+          <field>[oracle.42116.920193634258].[none:CHSI_STATE_NAME:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Smoking vs. Cancer' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Heart Disease vs. Obesity' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Distributed Causes of Death of All Black Americans' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='144' name='Sheet 4' width='174'>
+      iVBORw0KGgoAAAANSUhEUgAAAK4AAACQCAYAAACRfFAzAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAABmUlEQVR4nO3SQQ0AIBDAMMC/58MDH7KkVbDH9szMgpjzOwBeGJck45JkXJKMS5JxSTIu
+      ScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45Jk
+      XJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYl
+      ybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKM
+      S5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgk
+      GZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5Jx
+      STIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck
+      45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuSRePYgUc7kJNEQAAAABJRU5ErkJg
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
