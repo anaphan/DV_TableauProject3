@@ -4,7 +4,8 @@ author: "Ana Phan & Parth Patel"
 date: "April 17, 2015"
 output: html_document
 ---
-
+***
+***
 For "Tableau Project 3", we use the data for "Community Health Status Indicators (CHSI) to Combat Obesity, Heart Disease and Cancer". This dataset has multiple csv files that give key health indicators that are measured for several counties across all the states in the United States. Columns included in the dataset are deaths from different causes, demographics of the area, cases of diseases, health information, insurance and health practitioner data. 
 
 First, open Oracle SQL Developer and import the data for DEMOGRAPHICS, LEADINGCAUSESOFDEATH (renamed LEADING_CAUSES) and RISKFACTORSANDACCESSTOCARE (renamed RISK_FACTORS). Or skip this step and connect to the cs329e server with the respective UTEid's. 
@@ -59,7 +60,7 @@ For the last two visualizations, DEMOGRAPHICS data was blended with LEADING_CAUS
 
 **3. Distribution of Causes of Death according to Race**
 
-Causes of death are already grouped by ages and separated individually by race, so that each cause has a value for white, other, black and hispanic in certain age groups. We chose "Black" to show all the causes of death for a single race and made a calculated field of black birth defects, black cancer, etc. with all ages. 
+Causes of death are grouped by age and race. We chose to look into a particular race over all age ranges and look for patterns of leading causes of death. Here is a normal distribution for all records for American Black people. Each bar is a calculated field aggregating all age ranges for that cause of death.
 
 ![](./blending3.png)
 
@@ -67,8 +68,10 @@ Cancer and heart disease are the highest causes of death for black population. P
 
 **4. Age and Causes of Death**
 
-For our final visualization, it will be similar to the previous in using the causes of death but instead separating by filtering for an age group for individuals under 19. Based on the bar graph we see that individuals under 19 are dying mostly from cancer and suicide compared to other causes. 
+This final visualization looks into the cause of death distribution between age ranges. We looked to find a correlation between counties with a high percentage of individuals under the age of 19 and suicide as a leading cause of death.  The first graph shows the normal distribution of leading causes of death across all counties. The second graph filters for a high percentage of younger people. Based on the bar graph we see that individuals under 19 are dying mostly from cancer and suicide compared to other causes. The amount of suicide in these counties with many young people is drastically higher than the normal distribution.
+
+![](./normaldistribution.png)
 
 ![](./blending4.png)
 
-![](./normaldistribution.png)
+
